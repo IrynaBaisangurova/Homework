@@ -2,66 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Продукція</title>
+    <link rel="stylesheet" href="/product.css">
 </head>
 <body>
-    <header class="header">
-        <a href="https://google.com">
-<img src="./photo/image 1.svg" alt="img">
-        </a>
-    </header>
-    <hr>
-    <main>
-        <section>
-            <p>
-               <b>  Lorem ipsum dolor sit amet,</b>  consectetur adipiscing elit. Ut pharetra interdum nulla. Morbi dapibus turpis at venenatis convallis. Duis et rutrum nisl. 
-                Donec varius a nulla sed aliquam. Praesent nisi turpis, efficitur vitae dui vel, iaculis accumsan odio. Proin laoreet ex non leo maximus, vitae aliquam sapien aliquam. Morbi eget ornare mauris.
-            </p>
-            <p>
-               <i> Lorem ipsum dolor sit amet,</i> consectetur adipiscing elit. Ut pharetra interdum nulla. Morbi dapibus turpis at venenatis convallis. Duis et rutrum nisl. Donec varius a nulla sed aliquam. 
-                Praesent nisi turpis, efficitur vitae dui vel, iaculis accumsan odio. Proin laoreet ex non leo maximus, vitae aliquam sapien aliquam. Morbi eget ornare mauris.
-            </p>
-        </section>
-        <nav>
-            <span>
-                Blog
-            </span>
-            <span>
-                Sit
-            </span>
-            <span>
-                Info
-            </span>
-            <button>
-                Buy
-            </button>
+<section class=" section section-products">
+    <div class="container">
+        <header-product>
+            <h1 class="title-products">ПЕРЕЛІК ПРОДУКЦІЇ</h1>
+            <div class="iconCart">
+                <img src="/icon.png">
+                <div class="totalQuantity">0</div>
+            </div>
+        </header-product>
 
-        </nav>
-        <div>
-            <h1>
-                Lorem ipsum dolor <br> sit amet.
-            </h1>
-            <h6>
-              Lorem ipsum dolor  sit amet.
-            </h6>
+        <div class="listProduct">
+
+            <div class="item">
+                <img src="images/1eggs-faverol.jpg" alt="">
+                <h2>CoPilot / Black / Automatic</h2>
+                <div class="price">₴550</div>
+                <button>У Кошик</button>
+            </div>
+
         </div>
-    </main>
-    <hr>
-    <footer>
-        <ol>
-            <li>
-                Twitter
-            </li>
-            <li>
-                Facebook 
-            </li>
-            <li>
-                Instagram
-            </li>
-        </0l>
-    </footer>
+    </div>
+
+    <div class="cart">
+        <h2>
+            КОШИК
+        </h2>
+
+        <div class="listCart">
+
+
+            <div class="item">
+                <img src="/images/1eggs-faverol.jpg" alt="`${product.name}`">
+                <div class="content">
+                    <div class="name">CoPilot / Black / Automatic</div>
+                    <div class="price">₴550 / 1 </div>
+                </div>
+                <div class="quantity">
+                    <button>-</button>
+                    <span class="value">3</span>
+                    <button>+</button>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="buttons">
+            <div class="close">
+                ЗАКРИТИ
+            </div>
+            <div class="checkout">
+                <a href="/checkout.html">ВИБРАТИ</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <script src="/app.js"></script>
     
 </body>
 </html>
